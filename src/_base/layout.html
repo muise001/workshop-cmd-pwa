@@ -20,6 +20,13 @@
     <script src="/dist/js/bootstrap.js"></script>
     <script src="/assets/js/docs.min.js"></script>
     <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("/sw.js")
+
+        }
+    </script>
+
     {% block scripts_extra %}{% endblock %}
 
     <script>
